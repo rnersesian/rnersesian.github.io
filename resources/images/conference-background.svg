@@ -201,4 +201,7 @@
   
   <!-- Subtle bottom accent -->
   <rect x="0" y="1076" width="1920" height="4" fill="#003049" opacity="0.15"/>
+
+  <!-- AI attribution text -->
+  <text x="960" y="25" font-family="Arial, sans-serif" font-size="16" fill="#738290" opacity="0.6" text-anchor="middle">Image générée par IA</text>
 </svg>
