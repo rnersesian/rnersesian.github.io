@@ -1,0 +1,7 @@
+- oiseau qui traverse l'écran pendant que l'utilisateur scroll
+
+- des citations qui sortent de blocs de mario
+
+- éléments avec de la paralax
+
+- 

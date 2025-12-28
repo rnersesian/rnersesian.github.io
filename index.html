@@ -2,10 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>My github page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florian Verdier</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello github</h1>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSideBar()"><a href="#"><img src="resources/icons/icon-close.svg" alt="Close"></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Produits</a></li>
+            <li><a href="#">A propos</a></li>
+        </ul>
+        <ul id="top-nav">
+            <li><a href="#">Florian Verdier</a></li>
+            <li class="hideOnMobile"><a href="#">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Produits</a></li>
+            <li class="hideOnMobile"><a href="#">A propos</a></li>
+            <li class="mobile-icon" onclick="showSideBar()"><a href="#"><img src="resources/icons/icon-menu.svg" alt="Menu"></a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
