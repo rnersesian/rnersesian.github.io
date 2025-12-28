@@ -42,13 +42,28 @@ nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
-    color: var(--dark-grey);
+    color: var(--darker-gray);
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-nav a::after {
+#top-nav a::after {
     content: '';
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: 200ms;
+    border-radius: 1px;
+}
+
+#top-nav a:hover:after {
+    width: 100%;
+    transition-duration: 150ms;
 }
 
 .sidebar {

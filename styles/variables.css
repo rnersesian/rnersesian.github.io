@@ -1,8 +1,9 @@
 :root {
     --crimson-carrot: #f6511dff;
     --deep-space-blue: #003049ff;
-    --slate-grey: #738290ff;
-    --dark-grey: hsl(209, 12%, 15%);
+    --grey: #738290ff;
+    --dark-gray: #383e46;
+    --darker-gray: hsl(209, 12%, 15%);
     --beige: #eef4d4ff;
     --light-beige: #f8fbed;
     --porcelain: #fdfffcff;
