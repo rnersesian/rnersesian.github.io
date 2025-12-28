@@ -14,6 +14,11 @@ h1 {
     color: var(--darker-gray);
 }
 
+h2 {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
 h2, h3 {
     color: var(--dark-gray);
 }

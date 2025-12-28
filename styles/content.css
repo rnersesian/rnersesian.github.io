@@ -2,7 +2,15 @@ section {
     min-height: 400px;
     margin: auto;
     border-bottom: 2px solid lightgray;
-    padding: min(5em, 8%)
+    padding: min(5em, 8%);
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+@media(max-width: 1000px) {
+    section {
+        grid-template-columns: 1fr;
+    }
 }
 
 section:last-child {
@@ -17,6 +25,4 @@ section#main {
     margin-top: -50px;
     padding-top: 70px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
 }

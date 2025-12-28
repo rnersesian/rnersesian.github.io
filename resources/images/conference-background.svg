@@ -21,8 +21,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.73981481"
-     inkscape:cx="952.26533"
-     inkscape:cy="129.08636"
+     inkscape:cx="951.58949"
+     inkscape:cy="128.41051"
      inkscape:window-width="1920"
      inkscape:window-height="1008"
      inkscape:window-x="0"
@@ -667,13 +667,4 @@
      opacity="0.15"
      id="rect68" />
   <!-- AI attribution text -->
-  <text
-     x="960"
-     y="25"
-     font-family="Arial, sans-serif"
-     font-size="16"
-     fill="#738290"
-     opacity="0.6"
-     text-anchor="middle"
-     id="text68">Image générée par IA</text>
 </svg>
