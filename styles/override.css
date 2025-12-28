@@ -12,10 +12,8 @@ h1 {
     font-size: 48px;
     margin-bottom: 1rem;
     color: var(--darker-gray);
-    animation: 1s normal 0s 1 slideInFromLeft;
 }
 
 h2, h3 {
     color: var(--dark-gray);
-    animation: 1s normal 0s 1 slideInFromLeft;
 }
