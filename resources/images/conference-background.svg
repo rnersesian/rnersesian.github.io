@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Light gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdfffc"/>
+      <stop offset="50%" style="stop-color:#eef4d4"/>
+      <stop offset="100%" style="stop-color:#f5f8e8"/>
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f6511d"/>
+      <stop offset="100%" style="stop-color:#ff7a47"/>
+    </linearGradient>
+    
+    <!-- Flying bird - simple V shape like birds in the sky -->
+    <symbol id="birdV" viewBox="0 0 40 20">
+      <path d="M0 20 Q10 10, 20 12 Q30 10, 40 20 Q30 14, 20 16 Q10 14, 0 20Z" fill="currentColor"/>
+    </symbol>
+    
+    <!-- Bird silhouette - side view -->
+    <symbol id="birdSide" viewBox="0 0 60 40">
+      <path d="M0 20 L15 18 L20 10 L25 18 L55 15 L60 18 L55 22 L25 22 L20 35 L18 22 L15 22 L10 25 L5 22 Z" fill="currentColor"/>
+    </symbol>
+    
+    <!-- Soaring bird -->
+    <symbol id="birdSoar" viewBox="0 0 80 30">
+      <path d="M0 15 Q15 5, 30 12 L40 10 L50 12 Q65 5, 80 15 Q65 12, 50 15 L40 18 L30 15 Q15 12, 0 15Z" fill="currentColor"/>
+    </symbol>
+    
+    <!-- Pixel block -->
+    <symbol id="pixel" viewBox="0 0 20 20">
+      <rect x="0" y="0" width="20" height="20" rx="2" fill="currentColor"/>
+    </symbol>
+    
+    <!-- D-pad shape -->
+    <symbol id="dpad" viewBox="0 0 60 60">
+      <rect x="20" y="0" width="20" height="60" rx="3" fill="currentColor"/>
+      <rect x="0" y="20" width="60" height="20" rx="3" fill="currentColor"/>
+    </symbol>
+    
+    <!-- Game controller button -->
+    <symbol id="button" viewBox="0 0 30 30">
+      <circle cx="15" cy="15" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="15" cy="15" r="8" fill="currentColor" opacity="0.3"/>
+    </symbol>
+    
+    <!-- Feather -->
+    <symbol id="feather" viewBox="0 0 20 60">
+      <path d="M10 0 C15 15, 18 25, 15 35 C12 30, 10 32, 10 35 C10 32, 8 30, 5 35 C2 25, 5 15, 10 0Z" fill="currentColor"/>
+      <line x1="10" y1="35" x2="10" y2="60" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+  
+  <!-- Light background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle grid pattern (gaming reference) -->
+  <g opacity="0.04">
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="none" stroke="#738290" stroke-width="0.5"/>
+    </pattern>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Decorative soft circles -->
+  <circle cx="200" cy="150" r="250" fill="#f6511d" opacity="0.06"/>
+  <circle cx="1750" cy="900" r="300" fill="#003049" opacity="0.04"/>
+  <circle cx="960" cy="600" r="400" fill="#738290" opacity="0.03"/>
+  <circle cx="1400" cy="200" r="180" fill="#f6511d" opacity="0.04"/>
+  
+  <!-- Flock of V-birds in the distance (top area) -->
+  <g fill="#003049" opacity="0.15">
+    <use href="#birdV" x="150" y="80" width="35" height="17"/>
+    <use href="#birdV" x="200" y="100" width="30" height="15"/>
+    <use href="#birdV" x="170" y="120" width="25" height="12"/>
+    <use href="#birdV" x="230" y="90" width="28" height="14"/>
+    <use href="#birdV" x="190" y="140" width="22" height="11"/>
+  </g>
+  
+  <g fill="#003049" opacity="0.12">
+    <use href="#birdV" x="1500" y="120" width="40" height="20"/>
+    <use href="#birdV" x="1560" y="100" width="35" height="17"/>
+    <use href="#birdV" x="1530" y="150" width="30" height="15"/>
+    <use href="#birdV" x="1590" y="130" width="28" height="14"/>
+  </g>
+  
+  <g fill="#738290" opacity="0.18">
+    <use href="#birdV" x="800" y="60" width="45" height="22"/>
+    <use href="#birdV" x="870" y="80" width="38" height="19"/>
+    <use href="#birdV" x="830" y="100" width="32" height="16"/>
+    <use href="#birdV" x="900" y="70" width="30" height="15"/>
+  </g>
+  
+  <!-- Soaring birds mid-level -->
+  <g fill="#003049" opacity="0.1">
+    <use href="#birdSoar" x="100" y="300" width="100" height="38" transform="rotate(-5 150 319)"/>
+    <use href="#birdSoar" x="1600" y="400" width="120" height="45" transform="rotate(8 1660 422)"/>
+  </g>
+  
+  <g fill="#f6511d" opacity="0.12">
+    <use href="#birdSoar" x="1200" y="250" width="90" height="34" transform="rotate(-3 1245 267)"/>
+  </g>
+  
+  <!-- Side-view birds -->
+  <g fill="#003049" opacity="0.08">
+    <use href="#birdSide" x="500" y="500" width="70" height="47" transform="rotate(10 535 523)"/>
+    <use href="#birdSide" x="1350" y="600" width="65" height="43" transform="rotate(-5 1382 621)"/>
+  </g>
+  
+  <!-- Gaming elements - pixels scattered -->
+  <g fill="#f6511d" opacity="0.2">
+    <use href="#pixel" x="1750" y="250" width="16" height="16"/>
+    <use href="#pixel" x="1775" y="275" width="12" height="12"/>
+    <use href="#pixel" x="1760" y="295" width="10" height="10"/>
+    <use href="#pixel" x="1790" y="260" width="8" height="8"/>
+  </g>
+  
+  <g fill="#003049" opacity="0.1">
+    <use href="#pixel" x="80" y="750" width="18" height="18"/>
+    <use href="#pixel" x="110" y="780" width="14" height="14"/>
+    <use href="#pixel" x="65" y="800" width="10" height="10"/>
+    <use href="#pixel" x="130" y="760" width="12" height="12"/>
+  </g>
+  
+  <g fill="#738290" opacity="0.12">
+    <use href="#pixel" x="650" y="850" width="15" height="15"/>
+    <use href="#pixel" x="675" y="870" width="11" height="11"/>
+    <use href="#pixel" x="640" y="885" width="9" height="9"/>
+  </g>
+  
+  <!-- D-pad elements -->
+  <g fill="#003049" opacity="0.06">
+    <use href="#dpad" x="1650" y="700" width="70" height="70" transform="rotate(12 1685 735)"/>
+  </g>
+  
+  <g fill="#738290" opacity="0.08">
+    <use href="#dpad" x="150" y="500" width="55" height="55" transform="rotate(-8 177 527)"/>
+  </g>
+  
+  <!-- Controller buttons -->
+  <g stroke="#f6511d" fill="#f6511d" opacity="0.15">
+    <use href="#button" x="1800" y="500" width="25" height="25"/>
+    <use href="#button" x="1830" y="530" width="20" height="20"/>
+  </g>
+  
+  <g stroke="#003049" fill="#003049" opacity="0.08">
+    <use href="#button" x="100" y="350" width="28" height="28"/>
+  </g>
+  
+  <!-- Floating feathers -->
+  <g fill="#738290" opacity="0.15">
+    <use href="#feather" x="350" y="650" width="25" height="75" transform="rotate(20 362 687)"/>
+    <use href="#feather" x="1500" y="500" width="22" height="66" transform="rotate(-25 1511 533)"/>
+    <use href="#feather" x="950" y="800" width="24" height="72" transform="rotate(30 962 836)"/>
+  </g>
+  
+  <g fill="#f6511d" opacity="0.1">
+    <use href="#feather" x="1250" y="180" width="28" height="84" transform="rotate(-35 1264 222)"/>
+    <use href="#feather" x="550" y="400" width="20" height="60" transform="rotate(15 560 430)"/>
+  </g>
+  
+  <g fill="#003049" opacity="0.08">
+    <use href="#feather" x="750" y="300" width="26" height="78" transform="rotate(-10 763 339)"/>
+  </g>
+  
+  <!-- Decorative wave lines -->
+  <g stroke="#738290" stroke-width="1.5" opacity="0.08" fill="none">
+    <path d="M0 700 Q300 660, 600 700 T1200 680 T1920 720"/>
+    <path d="M0 750 Q400 720, 800 750 T1600 730 T1920 760"/>
+  </g>
+  
+  <!-- Accent elements -->
+  <g stroke="#f6511d" stroke-width="2" opacity="0.1" fill="none">
+    <path d="M0 900 Q480 860, 960 900 T1920 880"/>
+  </g>
+  
+  <!-- Corner decorations -->
+  <g fill="#003049" opacity="0.06">
+    <circle cx="40" cy="40" r="4"/>
+    <circle cx="70" cy="60" r="3"/>
+    <circle cx="55" cy="85" r="2"/>
+    
+    <circle cx="1880" cy="40" r="4"/>
+    <circle cx="1850" cy="65" r="3"/>
+    <circle cx="1865" cy="90" r="2"/>
+    
+    <circle cx="40" cy="1040" r="4"/>
+    <circle cx="75" cy="1020" r="3"/>
+    
+    <circle cx="1880" cy="1040" r="4"/>
+    <circle cx="1845" cy="1015" r="3"/>
+  </g>
+  
+  <!-- More distant V-birds -->
+  <g fill="#738290" opacity="0.1">
+    <use href="#birdV" x="450" y="180" width="32" height="16"/>
+    <use href="#birdV" x="490" y="200" width="28" height="14"/>
+    <use href="#birdV" x="1100" y="150" width="36" height="18"/>
+    <use href="#birdV" x="1150" y="170" width="30" height="15"/>
+  </g>
+  
+  <!-- Subtle bottom accent -->
+  <rect x="0" y="1076" width="1920" height="4" fill="#003049" opacity="0.15"/>
+</svg>

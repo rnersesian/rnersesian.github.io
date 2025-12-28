@@ -1,0 +1,21 @@
+@import url('variables.css');
+@import url('navigation.css');
+@import url('content.css');
+
+body {
+    background-color: var(--light-beige);
+}
+
+.mobile-icon {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+}
