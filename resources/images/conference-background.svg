@@ -20,15 +20,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.73981481"
-     inkscape:cx="951.58949"
-     inkscape:cy="128.41051"
+     inkscape:zoom="0.81145357"
+     inkscape:cx="788.7081"
+     inkscape:cy="51.758969"
      inkscape:window-width="1920"
      inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg68" />
+     inkscape:current-layer="g32" />
   <defs
      id="defs10">
     <!-- Light gradient background -->
@@ -369,24 +369,7 @@
   <g
      fill="#003049"
      opacity="0.08"
-     id="g32">
-    <use
-       href="#birdSide"
-       x="500"
-       y="500"
-       width="70"
-       height="47"
-       transform="rotate(10 535 523)"
-       id="use31" />
-    <use
-       href="#birdSide"
-       x="1350"
-       y="600"
-       width="65"
-       height="43"
-       transform="rotate(-5 1382 621)"
-       id="use32" />
-  </g>
+     id="g32" />
   <!-- Gaming elements - pixels scattered -->
   <g
      fill="#f6511d"

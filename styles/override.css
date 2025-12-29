@@ -3,6 +3,19 @@ body.loading {
     overflow: hidden;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+}
+
 body {
     opacity: 1;
     transition: opacity 0.3s ease-in;

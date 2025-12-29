@@ -15,6 +15,14 @@ function loadResources()
 
 window.addEventListener('load', () => {
     loadResources()
+    
+    // close navbar on link click
+    navLinks = document.querySelectorAll('#navbar ul li a')
+    navLinks.forEach(navlink => {
+        navlink.addEventListener('click', () => {
+            hideSideBar()
+        })
+    });
 });
 
 
@@ -22,20 +30,18 @@ window.addEventListener('load', () => {
 // User events
 //
 
+navbar = document.getElementById('navbar')
+overlay = document.getElementById('overlay')
+
 function showSideBar()
 {
-    const sidebar = document.querySelector('.sidebar')
-    const menuIcon = document.querySelector('nav #menu-icon')
-
-    sidebar.style.display = "flex"
-    menuIcon.style.visibility = "hidden"
+    navbar.classList.add('show')
+    overlay.classList.add('show')
 }
 
 function hideSideBar()
-{
-    const sidebar = document.querySelector('.sidebar')
-    const menuIcon = document.querySelector('nav #menu-icon')
-
-    sidebar.style.display = "none"
-    menuIcon.style.visibility = "visible"
+{   
+    navbar.classList.remove('show')
+    overlay.classList.remove('show')
 }
+
