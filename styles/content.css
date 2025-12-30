@@ -2,29 +2,21 @@ section {
     min-height: 400px;
     margin: auto;
     border-bottom: 2px solid lightgray;
-    padding: min(5em, 8%);
+    padding: min(2em, 8%);
     grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-rows: 1fr 3fr;
+    gap: 3rem;
     display: grid;
 }
 
-.section-header {
-}
+/* section:nth-child(2n + 1) .section-header {
+    text-align: end;
+} */
 
-.section-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-@media(max-width: 1000px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-
-    .section-content {
-        display: grid;
-        grid-template-columns: 1fr;
+@media screen and (min-width: 1200px) {
+    .section-content, .section-header {
+        width: 90%;
+        margin: auto;
     }
 }
 
@@ -36,11 +28,75 @@ section#main {
     background: url('../resources/images/conference-background.svg');
     background-size: cover;
     background-position: center top;
-    min-height: 600px;
+    /* min-height: 600px; */
     margin-top: -50px;
     padding-top: 50px;
 }
 
+section#main .section-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: max(40px, 4em);
+}
+
 section#main img {
     max-width: 100%;
+}
+
+
+section#projects .section-content.carousel {
+    display: grid;
+    height: 100%;
+    grid-auto-columns: 30em;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    gap: 1em;
+}
+
+section#projects .carousel-card {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15em;
+    width: 100%;
+}
+
+section#projects .carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+section#projects .carousel-card:nth-child(odd) {
+    background: blue;
+}
+section#projects .carousel-card:nth-child(even) {
+    background: magenta;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    section#main .section-content {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section#main .section-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    section#main .section-content {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        grid-template-rows: auto;
+    }
 }

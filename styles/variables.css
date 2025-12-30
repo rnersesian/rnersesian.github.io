@@ -8,4 +8,24 @@
     --light-beige: #f8fbed;
     --porcelain: #fdfffcff;
 
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 12px;
+    }
 }
