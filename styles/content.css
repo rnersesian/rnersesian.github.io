@@ -44,19 +44,29 @@ section#main img {
 }
 
 
+section#projects {
+    background: var(--beige);
+}
+
 section#projects .section-content.carousel {
     display: grid;
     height: 100%;
     grid-auto-columns: 30em;
     grid-auto-flow: column;
     overflow-x: scroll;
-    gap: 1em;
+    gap: 0.5em;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+section#projects .section-content.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 section#projects .carousel-card {
     border-radius: 10px;
     cursor: pointer;
-    height: 15em;
+    height: 20em;
     width: 100%;
 }
 
@@ -66,6 +76,7 @@ section#projects .carousel-card img {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    display: block;
 }
 
 section#projects .carousel-card:nth-child(odd) {
